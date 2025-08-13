@@ -37,7 +37,8 @@
             tbPrueba.Location = new Point(12, 12);
             tbPrueba.Multiline = true;
             tbPrueba.Name = "tbPrueba";
-            tbPrueba.Size = new Size(655, 609);
+            tbPrueba.ScrollBars = ScrollBars.Vertical;
+            tbPrueba.Size = new Size(655, 769);
             tbPrueba.TabIndex = 0;
             // 
             // btnPrueba
@@ -54,7 +55,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(822, 633);
+            ClientSize = new Size(822, 796);
             Controls.Add(btnPrueba);
             Controls.Add(tbPrueba);
             Font = new Font("Segoe UI", 15F);

@@ -31,8 +31,54 @@ namespace ej1.Models
         }
         public string Describir()
         {
-            return $@"Tipo: Ortoedro
-                largo:"; 
+            return $@"[ {{
+                        ""Tipo"": ""Ortoedro"",
+                        ""Tapas"":
+                            [
+                                {{
+                             ""Tipo"":""Rectangulo"",
+                            ""Largo"":""{Bases[0].Largo:f2}"",
+                            ""Ancho"":""{Bases[0].Ancho:f2} "",
+                            ""Area"":""{Bases[0].CalcularArea():f2}"",
+                            }}, 
+                                {{
+                               ""Tipo"":""Rectangulo"",
+                            ""Largo"":""{Bases[1].Largo:f2}"",
+                            ""Ancho"":""{Bases[1].Ancho:f2} "",
+                            ""Area"":""{Bases[1].CalcularArea():f2} "",
+                            }},
+                            ],
+                       ""Laterales"":
+                            [
+                            {{
+                              ""Tipo"":""Rectangulo"",
+                            ""Largo"":""{Laterales[0].Largo:f2}"",
+                            ""Ancho"":""{Laterales[0].Ancho:f2}"",
+                            ""Area"":""{Laterales[0].CalcularArea():f2}"",
+                            }},
+                            {{
+                              ""Tipo"":""Rectangulo"",
+                            ""Largo"":""{Laterales[1].Largo:f2}"",
+                            ""Ancho"":""{Laterales[1].Ancho:f2}"",
+                            ""Area"":""{Laterales[1].CalcularArea():f2}"",
+                            }},
+                            {{
+                              ""Tipo"":""Rectangulo"",
+                            ""Largo"":""{Laterales[2].Largo:f2}"",
+                            ""Ancho"":""{Laterales[2].Ancho:f2}"",
+                            ""Area"":""{Laterales[2].CalcularArea():f2}"",
+                            }},
+                            {{
+                              ""Tipo"":""Rectangulo"",
+                            ""Largo"":""{Laterales[3].Largo:f2}"",
+                            ""Ancho"":""{Laterales[3].Ancho:f2}"",
+                            ""Area"":""{Laterales[3].CalcularArea():f2}"",
+                            }},
+                            ],
+                            ""Area"":""{CalcularArea():f2}"",
+                            ""Volumen"":""{CalcularVolumen():f2}"",
+                            }}, ] ";
+                            
         }
     }
 }

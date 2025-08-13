@@ -10,7 +10,8 @@ namespace ej1
 
         private void btnPrueba_Click(object sender, EventArgs e)
         {
-
+            Ortoedro objeto1 = new Ortoedro(3, 3, 6);
+            tbPrueba.Text = objeto1.Describir();
         }
     }
 }
