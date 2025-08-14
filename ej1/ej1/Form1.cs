@@ -11,7 +11,9 @@ namespace ej1
         private void btnPrueba_Click(object sender, EventArgs e)
         {
             Ortoedro objeto1 = new Ortoedro(3, 3, 6);
-            tbPrueba.Text = objeto1.Describir();
+            Cubo objeto2 = new Cubo(5);
+            Cilindro objeto3 = new Cilindro(1, 3);
+            tbPrueba.Text = objeto1.Describir() + objeto2.Describir() + objeto3.Describir();
         }
     }
 }
